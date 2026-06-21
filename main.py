@@ -1,7 +1,28 @@
-list_of_strings = ['9', '0', '32', '8', '2', '8', '64', '29', '42', '99']
-numbers = [int(n) for n in list_of_strings]
-result = [int(n) for n in numbers if n%2 == 0 and n != 0]
+student_dict = {
+    "student": ["Angela", "James", "Lily"], 
+    "score": [56, 76, 98]
+}
 
+#Looping through dictionaries:
+for (key, value) in student_dict.items():
+    #Access key and value
+    # print(value)
+    pass
 
+import pandas
+student_data_frame = pandas.DataFrame(student_dict)
 
-print(result)
+#Loop through rows of a data frame
+for (index, row) in student_data_frame.iterrows():
+    #Access index and row
+    #Access row.student or row.score
+    pass
+
+# Keyword Method with iterrows()
+# {new_key:new_value for (index, row) in df.iterrows()}
+
+#TODO 1. Create a dictionary in this format:
+# {"A": "Alfa", "B": "Bravo"}
+
+#TODO 2. Create a list of the phonetic code words from a word that the user inputs.
+
